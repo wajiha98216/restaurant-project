@@ -40,9 +40,14 @@
             <input type="email" placeholder="Email Address" required>
           </div>
           <div class="input-group">
-            <input type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="(this.type='text')"
+            <input type="text" id="dateInput" placeholder="Select Date"
+              onfocus="this.type='date'; this.style.color='#333';"
+              onchange="this.setAttribute('data-value', this.value); this.type='text'; this.value=this.getAttribute('data-value'); this.style.color='#333';"
               required>
-            <input type="text" placeholder="Select Time" onfocus="(this.type='time')" onblur="(this.type='text')"
+
+            <input type="text" id="timeInput" placeholder="Select Time"
+              onfocus="this.type='time'; this.style.color='#333';"
+              onchange="this.setAttribute('data-value', this.value); this.type='text'; this.value=this.getAttribute('data-value'); this.style.color='#333';"
               required>
           </div>
           <div class="input-group">
