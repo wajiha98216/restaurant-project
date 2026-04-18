@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu – Noori Foods</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="inner-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-container"> <img src="images/logo_img.png" class="logo-img">
+      <span class="logo-text">Noori Foods</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="menu.html" class="active-link">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="menu-page-header">
+    <p class="menu-eyebrow">Discover the Real Taste</p>
+    <h1 class="menu-main-title">Our Menu</h1>
+    <div class="menu-title-line"></div>
+    <p class="menu-subtitle">Crafted with heritage spices & served with love</p>
+  </section>
+
+  <!-- MENU ROWS -->
+  <section class="menu-rows">
+
+    <!-- ROW 1: Text Left, Image Right -->
+    <div class="menu-row row-normal">
+      <div class="menu-text-block">
+        <p class="dish-category">Karahi Dishes</p>
+        <h2 class="dish-name">Chicken Karahi</h2>
+        <div class="dish-line"></div>
+        <p class="dish-desc">Authentic Chicken Karahi cooked with fresh tomatoes, green chilies and ginger. A
+          traditional treat for spice lovers — available in half and full portions.</p>
+      </div>
+      <div class="menu-img-block">
+        <div class="img-container">
+          <img src="images/menu1.png" alt="Chicken Karahi">
+          <div class="overlay" onclick="openLightbox(this)">
+            <div class="icon-square"><i class="fas fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Image Left, Text Right -->
+    <div class="menu-row row-reverse">
+      <div class="menu-img-block">
+        <div class="img-container">
+          <img src="images/menu2.png" alt="Shahi Pulao">
+          <div class="overlay" onclick="openLightbox(this)">
+            <div class="icon-square"><i class="fas fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-text-block">
+        <p class="dish-category">Chicken Pulao</p>
+        <h2 class="dish-name">Shahi Pulao</h2>
+        <div class="dish-line"></div>
+        <p class="dish-desc">Long-grain basmati rice cooked with premium spices, aromatic herbs and tender meat. Pure
+          royalty on a plate — a must-try for every rice lover at Noori Foods.</p>
+      </div>
+    </div>
+
+    <!-- ROW 3: Text Left, Image Right -->
+    <div class="menu-row row-normal">
+      <div class="menu-text-block">
+        <p class="dish-category">Quick Bites</p>
+        <h2 class="dish-name">Fast Food Selection</h2>
+        <div class="dish-line"></div>
+        <p class="dish-desc">Explore our wide range of fast food favorites, from crunchy zinger burgers and juicy
+          grilled options to cheesy pizzas and hot wings.</p>
+      </div>
+      <div class="menu-img-block">
+        <div class="img-container">
+          <img src="images/menu3.png" alt="Fast Food">
+          <div class="overlay" onclick="openLightbox(this)">
+            <div class="icon-square"><i class="fas fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" src="">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-overlay">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h1 class="footer-logo-text">Noori Foods</h1>
+          <p class="footer-tagline">Authentic Pakistani Cuisine<br>Served with Love</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Social Media</h4>
+          <div class="social-icons-wrapper">
+            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="contact-list">
+            <p><i class="fas fa-map-marker-alt"></i>Munawar Colony, Main Adyala Road, Rawalpindi</p>
+            <p><i class="fas fa-phone-alt"></i> (051) 5180666</p>
+            <p><i class="fas fa-envelope"></i> noorifoodspak@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright &copy; 2026 All rights reserved | Noori Foods</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

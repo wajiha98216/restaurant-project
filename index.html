@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noori Foods</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+      <a href="index.html" class="logo-container"> <img src="images/logo_img.png" class="logo-img">
+      <span class="logo-text">Noori Foods</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>GOODNESS OF AUTHENTIC PAKISTANI CUISINE</h1>
+      <p>Experience the real taste of Noori Foods</p>
+    </div>
+    <div class="bowl-overlap">
+      <img src="images/bowl.png" alt="food bowl" />
+    </div>
+  </section>
+
+  <!-- OUR STORY SECTION -->
+  <section class="story-section" id="our-story">
+    <div class="story-inner">
+      <div class="story-left">
+        <div class="story-our-label">OUR</div>
+        <div class="story-title-big">Story</div>
+      </div>
+      <div class="story-right">
+        <p class="story-body">
+          At Noori Foods, we believe that cooking is an art of tradition.
+          Our journey started with a passion for authentic Pakistani flavors,
+          using hand-picked spices and recipes passed down through generations.
+          Every dish we serve is a piece of our heritage.
+        </p>
+        <a class="read-more" href="#" onclick="openStoryPopup(event)">READ MORE</a>
+        <img src="images/img3.png" alt="lemon" class="lemon-deco" />
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY POPUP -->
+  <div class="story-popup-overlay" id="storyPopup" onclick="closeStoryPopup(event)">
+    <div class="story-popup-box">
+      <button class="popup-close" onclick="closeStoryPopup()">&times;</button>
+      <p class="popup-eyebrow">Our Heritage</p>
+      <h2 class="popup-title">The Story Behind Noori Foods</h2>
+      <div class="popup-line"></div>
+      <p class="popup-body">
+        Noori Foods was founded with a single mission — to bring the true, uncompromised taste of Pakistani cuisine to
+        every table. What began as a small family kitchen in Rawalpindi has grown into a beloved dining destination
+        known for its warmth, hospitality, and unforgettable flavors.
+      </p>
+      <p class="popup-body">
+        Every recipe we serve has been carefully preserved and passed down through generations. Our chefs use only the
+        finest hand-picked spices, sourced fresh daily, to ensure that every bite carries the soul of authentic
+        Pakistani cooking.
+      </p>
+      <p class="popup-body">
+        From our signature Peshwari Karahi to our slow-cooked Nihari, each dish tells a story — a story of culture,
+        tradition, and a deep love for food. At Noori Foods, we don't just serve meals. We serve memories.
+      </p>
+      <div class="popup-footer">
+        <span class="popup-tag">Est. 2021</span>
+        <span class="popup-tag">Rawalpindi, Pakistan</span>
+        <span class="popup-tag">100% Halal</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY & ITEMS SECTION -->
+  <section class="content-wrapper">
+    <img src="images/barries.png" alt="" class="berries-left">
+
+    <div class="gallery-section">
+      <h2 class="section-heading">Our Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/gallery1.png" alt="Gallery 1"></div>
+        <div class="gallery-item"><img src="images/gallery2.png" alt="Gallery 2"></div>
+        <div class="gallery-item"><img src="images/gallery3.png" alt="Gallery 3"></div>
+      </div>
+    </div>
+
+    <div class="items-section">
+      <h2 class="section-heading">Featured Dishes</h2>
+      <div class="items-grid">
+        <div class="food-card">
+          <img src="images/item1.png" alt="Chicken Karahi">
+          <h3>Chicken Karahi</h3>
+          <p>Authentic Chicken Karahi cooked with fresh tomatoes.</p>
+        </div>
+        <div class="food-card">
+          <img src="images/item2.png" alt="Pulao">
+          <h3>Pulao</h3>
+          <p>Long-grain basmati rice cooked with premium spices.</p>
+        </div>
+        <div class="food-card">
+          <img src="images/item3.png" alt="Grilled BBQ">
+          <h3>Grilled BBQ</h3>
+          <p>Traditional smoky BBQ platter with our signature spices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION -->
+  <section id="testimonial-section">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonial-container" onmouseover="stopAutoPlay()" onmouseout="startAutoPlay()">
+      <div class="testimonial-window">
+        <div class="t-slide active">
+          <h3>Ahmed Raza</h3>
+          <p class="designation">Regular Guest</p>
+          <p class="review-text">"The dining experience here is truly exceptional. From the warm hospitality to the
+            authentic flavors of every dish, everything was perfect. The consistency in their taste and quality of
+            service is what truly makes them stand out from the rest."</p>
+        </div>
+        <div class="t-slide">
+          <h3>Zoya Malik</h3>
+          <p class="designation">Food Blogger</p>
+          <p class="review-text">"I recently hosted a family gathering here and the management exceeded my expectations.
+            The ambiance was serene and the Mutton Karahi was cooked to perfection. It is definitely a must-visit spot
+            for anyone looking for premium Pakistani cuisine."</p>
+        </div>
+        <div class="t-slide">
+          <h3>Bilal Sheikh</h3>
+          <p class="designation">Verified Customer</p>
+          <p class="review-text">"An amazing place with a wonderful atmosphere. The staff is professional and the food
+            is served fresh and hot. Their Malai Boti melted in my mouth and the presentation was top-notch. I will
+            surely be returning with my colleagues very soon."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-overlay">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h1 class="footer-logo-text">Noori Foods</h1>
+          <p class="footer-tagline">Authentic Pakistani Cuisine<br>Served with Love</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Social Media</h4>
+          <div class="social-icons-wrapper">
+            <a href="https://www.facebook.com/newnoorifoods/" target="_blank" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/newnoorifoods/" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+            <a href="//www.youtube.com/@newnoorifoods6241" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="contact-list">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <a href="https://maps.app.goo.gl/NLa3omfZAnrW1VbYA" target="_blank"
+                style="color: inherit; text-decoration: none;">
+                Munawar Colony, Main Adyala Road, Rawalpindi
+              </a>
+            </p>
+            <p><i class="fas fa-phone-alt"></i> 03336666809</p>
+            <p><i class="fas fa-envelope"></i> noorifoodspak@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright &copy; 2026 All rights reserved | Noori Foods</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
